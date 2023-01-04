@@ -20,19 +20,31 @@ public class Ejemplo01 {
         
         String miCiudad = obtenerCiudadMayuscula("Loja");
         System.out.printf("%s\n", miCiudad);
+    
+        String nombre = obtenerNombre();
+        System.out.printf("%s\n", nombre);
+    
+        System.out.printf("%s\n", obtenerNombre());
     }
     
     
-    public String obtenerCiudadMayuscula(String m){
+    public static String obtenerCiudadMayuscula(String m){ //devuelve cadena
         String m2 = m.toUpperCase();
         return m2;
     }
     
-    public static void obtenerMultiplicacion(int tabla, int limite){
+    public static void obtenerMultiplicacion(int tabla, int limite){ //no devuelve nada, es void
         
     }
+  /*  public void obtenerSuma (){ //(con void es procedimiento)      
+    }
+    public int obtenerSuma1 (){ //(con int es funcion que retorna entero )      
+    }
+    public double obtenerSuma2 (){ //(con double es funcion que retorna decimal, etc)      
+    }
+*/
     
-    public static String obtenerNombre(){
+    public static String obtenerNombre(){//devuelve cadena
         return "Luis";
     }
     
